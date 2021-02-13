@@ -15,3 +15,7 @@ app.get('/', (req, res) => {
     client.set('noVisits', parseInt(noVisits) + 1);
   });
 });
+
+app.listen(8080, () => {
+  console.log('Listening on port 8080');
+});
